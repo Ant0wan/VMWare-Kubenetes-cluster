@@ -1,0 +1,31 @@
+[etcd]
+etcd00 vm_guestname='' esx_hostname='' vm_hostname='etcd00' guest_datastore='' guest_custom_ip='' ansible_host=''
+etcd01 vm_guestname='' esx_hostname='' vm_hostname='etcd01' guest_datastore='' guest_custom_ip='' ansible_host=''
+etcd02 vm_guestname='' esx_hostname='' vm_hostname='etcd02' guest_datastore='' guest_custom_ip='' ansible_host=''
+
+[etcd:vars]
+guest_memory='4096'
+guest_vcpu='4'
+guest_disk_size='84'
+
+
+[master]
+master00 vm_guestname='' esx_hostname='' vm_hostname='master00' guest_datastore='' guest_custom_ip='' ansible_host=''
+master01 vm_guestname='' esx_hostname='' vm_hostname='master01' guest_datastore='' guest_custom_ip='' ansible_host=''
+master02 vm_guestname='' esx_hostname='' vm_hostname='master02' guest_datastore='' guest_custom_ip='' ansible_host=''
+
+[master:vars]
+guest_memory='2048'
+guest_vcpu='2'
+guest_disk_size='10'
+
+
+[worker]
+worker00 vm_guestname='' esx_hostname='' vm_hostname='worker00' guest_datastore='' guest_custom_ip='' ansible_host=''
+worker01 vm_guestname='' esx_hostname='' vm_hostname='worker01' guest_datastore='' guest_custom_ip='' ansible_host=''
+worker02 vm_guestname='' esx_hostname='' vm_hostname='worker02' guest_datastore='' guest_custom_ip='' ansible_host=''
+
+[worker:vars]
+guest_memory='16384'
+guest_vcpu='6'
+guest_disk_size='21'
