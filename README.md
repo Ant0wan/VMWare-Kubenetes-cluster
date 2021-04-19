@@ -10,3 +10,5 @@ wget https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64
 export ANSIBLE_HOST_KEY_CHECKING=False
 ansible-playbook -i hosts cluster.yaml
 ```
+
+![plan](.map.png)
